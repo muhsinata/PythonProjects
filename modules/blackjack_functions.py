@@ -1,4 +1,15 @@
-#Necessary functions for blackjack game
+# Necessary functions for blackjack game
+
+import modules.blackjack_art
+import random
+import os
+
+clear = lambda: os.system('cls')
+
+print(modules.blackjack_art.logo)
+
+cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10] 
+
 
 dealer_hand = random.choices(cards, k = 2)
 player_hand = random.choices(cards, k = 2)
